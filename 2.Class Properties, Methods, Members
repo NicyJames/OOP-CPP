@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class World
+{
+    public:
+    string name;
+    void display(){
+        cout<<"my name is "<<name<<"\n";
+    }
+};
+int main()
+{
+    World firstperson;
+    firstperson.name="nicy";
+    firstperson.display();
+    World secondperson;
+    secondperson.name="vivian";
+    secondperson.display();
+    return 0;
+}
