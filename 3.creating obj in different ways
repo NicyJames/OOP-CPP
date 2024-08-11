@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Human{
+    public:
+    string name;
+    void introduce()
+    {
+        cout<<"hi i am "<<name<<"\n";
+    }
+};
+int main()
+{
+    Human nicy;
+    Human *bunty = new Human();
+    nicy.name="nicy james";
+    nicy.introduce();
+    bunty->name="bunty sam";
+    bunty->introduce();
+    return 0;
+}
