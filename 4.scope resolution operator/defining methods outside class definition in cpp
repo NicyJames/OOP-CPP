@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Human{
+    public:
+    string name="no name"; //works if i dont pass "nicy james as an instance";
+    void introduce();
+};
+void Human :: introduce()
+{
+    cout<<Human::name<<"\n";
+}
+int main()
+{
+    Human nicy;
+    nicy.name="nicy james";
+    nicy.introduce();
+    return 0;
+}
