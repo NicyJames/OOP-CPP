@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Human
+{
+    private:
+      int age;
+      int getAge(){
+          return age-5;
+      }
+      public:
+      void setAge(int value)
+      {
+          age=value;
+      }
+      void displayAge()
+      {
+          cout<<getAge()<<"\n";
+      }
+};
+int main()
+{
+    Human nicy;
+    nicy.setAge(24);
+    nicy.displayAge();
+    return 0;
+}
