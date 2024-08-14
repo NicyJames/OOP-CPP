@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Human{
+    private:
+    int age;
+    string name;
+    public:
+    Human()
+    {
+        name="noname";
+        age=0;
+        cout<< "constructor called automatically when object \"nicy\" is created"<<"\n";
+
+    }
+    void display()
+    {
+        cout<<name<<"\t"<<age<<"\t";
+    }
+};
+int main()
+{
+    Human nicy;
+    nicy.display();
+}
