@@ -1,0 +1,49 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Human{
+    private:
+      int age;
+      string name;
+    public:
+      Human()
+      {
+          cout<<"default constructor with no parameters"<<"\n";
+          age=0;
+          name="no name";
+      }
+      Human(string iname)
+      {
+          cout<<"constructor with name as the parameter"<<"\n";
+          age=0;
+          name=iname;
+      }
+      Human(int iage)
+      {
+          cout<<"constructor with age as the parameter"<<"\n";
+          age=iage;
+          name="no name ";
+      }
+      Human(string iname, int iage)
+      {
+          cout<<"constructor with name and age as the parameters"<<"\n";
+          age=iage;
+          name=iname;
+      }
+      void display()
+      {
+          cout<<name<<"\t"<<age<<"\n";
+      }
+    
+};
+int main()
+{
+    Human nicy;
+    nicy.display();
+    Human gouri("gouri");
+    gouri.display();
+    Human ben(24);
+    ben.display();
+    Human John("John",21);
+    John.display();
+}
