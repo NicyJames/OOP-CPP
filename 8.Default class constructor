@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Human
+{
+    private:
+     int age;
+     string name;
+    public:
+     Human()
+     {
+         cout<<"Default constructor"<<"\n";
+         name="no name";
+         age=0;
+     }
+     Human(string iname, int iage=0){
+         cout<<"overloaded constructor"<<"\n";
+         name=iname;
+         age=iage;
+     }
+     void speakup()
+     {
+         cout<<name<<"\t"<<age<<"\n";
+     }
+};
+int main()
+{
+    Human nicy("nicyjames");
+    nicy.speakup();
+    return 0;
+}
