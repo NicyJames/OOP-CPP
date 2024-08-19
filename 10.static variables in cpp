@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Human{
+    public:
+     static int humancount;
+     Human()
+     {
+         humancount++;
+     }
+     void humantotal()
+     {
+         cout<<"there are "<<humancount<<" ppl in this prg"<<endl;
+     }
+     
+};
+int Human::humancount=0;
+int main()
+{
+    cout<<Human::humancount<<endl;
+    Human nicy;
+    Human gouri;
+    Human elsa;
+    nicy.humantotal();
+    gouri.humantotal();
+    elsa.humantotal();
+    cout<<Human::humancount<<endl;
+    
+}
